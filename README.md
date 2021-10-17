@@ -1,8 +1,10 @@
 # A Tutorial on Wikimedia Visual Resources and its Application to Neural Visual Recommender Systems
 
-This page hosts the material for the tutorial on **A Tutorial on Wikimedia Visual Resources and its Application to Neural Visual Recommender Systems**, presented at the 21st IEEE International Conference on Data Mining (IEEE ICDM 2021).
+This page hosts the material for our work **A Tutorial on Wikimedia Visual Resources and its Application to Neural Visual Recommender Systems**, presented at the [21st IEEE International Conference on Data Mining (IEEE ICDM 2021)](https://icdm2021.auckland.ac.nz/).
 
-**Schedule**: TBA
+**Abstract**: Due to the advancements in deep learning, visual recommendation systems are implemented using visual features from Deep Neural Networks (DNNs) as representations of images. The tutorial focuses on the implementation of visual recommendation systems using deep learning techniques, as well as model evaluation. For this purpose, we present some of the available research resources from the Wikimedia Foundation, introducing a new dataset for image recommendation. The tutorial aims at introducing visual recommendation systems to the data mining community, guiding participants through the complete pipeline of a visual recommendation problem, from data gathering to model evaluation and analysis.
+
+**Schedule**: TBA (Conference dates: December 7-10, 2021)
 
 ## Citation
 
@@ -30,7 +32,18 @@ TBA
 
 ## Program
 
-TBA
+| Duration | Overview                                                     |
+| -------- | ------------------------------------------------------------ |
+| 30 mins  | **Session 1**: Introduction to Visual RecSys, datasets and feature extraction with CNNS in Python. Wikimedia Foundation and its available research resources. |
+| 20 mins  | **Session 2**: Pipeline for training and testing visual RecSys in Python. |
+| 10 mins  | BREAK                                                        |
+| 25 mins  | **Session 3**: Visual Bayesian Personalized Ranking (VBPR) and Deep Visually-aware Bayesian Personalized Ranking (DVBPR) in Pytorch [2, 3] |
+| 20 mins  | **Session 4**: CuratorNet in Pytorch [1]                     |
+| 20 mins  | **Session 5**: Attentive Collaborative Filtering (ACF) in Pytorch [4] |
+| 15 mins  | Live demo of this repository                                 |
+| 10 mins  | Conclusions                                                  |
+
+Expected length of tutorial: 2.5 hours (half-day)
 
 ## Wikimedia Commons Dataset
 
