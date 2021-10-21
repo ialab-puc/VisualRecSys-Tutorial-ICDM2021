@@ -6,6 +6,8 @@ This page hosts the material for our work **A Tutorial on Wikimedia Visual Resou
 
 **Schedule**: TBA (Conference dates: December 7-10, 2021)
 
+**Contact**: Antonio Ossa-Guerra (`aaossa[at]uc[dot]cl`)
+
 ## Citation
 
 TBA
