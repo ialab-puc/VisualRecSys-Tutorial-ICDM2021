@@ -2,9 +2,20 @@
 
 This page hosts the material for our work **A Tutorial on Wikimedia Visual Resources and its Application to Neural Visual Recommender Systems**, presented at the [21st IEEE International Conference on Data Mining (IEEE ICDM 2021)](https://icdm2021.auckland.ac.nz/).
 
-**Schedule**: TBA (Conference dates: December 7-10, 2021)
+**Schedule**: 16:00-18:30, Wednesday, December 8, 2021 (GMT+13, Time in Auckland, New Zealand)
 
-**Contact**: Antonio Ossa-Guerra (`aaossa[at]uc[dot]cl`)
+## Instructors
+
+* Denis Parra, Associate Professor, PUC Chile
+* Antonio Ossa-Guerra*, MSc, PUC Chile
+* Manuel Cartagena, MSc, PUC Chile
+* Patricio Cerda-Mardini, MSc, PUC Chile & MindsDB
+* Felipe del Río, PhD Student, PUC Chile
+* Isidora Palma, MSc Student, PUC Chile
+* Diego Saez-Trumper, Senior Research Scientist, Wikimedia Foundation
+* Miriam Redi, Senior Research Scientist, Wikimedia Foundation
+
+***Corresponding author**: Antonio Ossa-Guerra (`aaossa[at]uc[dot]cl`)
 
 ## Abstract
 
@@ -12,35 +23,24 @@ Due to the advancements in deep learning, visual recommendation systems are impl
 
 ## Program
 
-| Duration | Overview                                                     |
-| -------- | ------------------------------------------------------------ |
-| 30 mins  | **Session 1**: Introduction to Visual RecSys, datasets and feature extraction with CNNS in Python. Wikimedia Foundation and its available research resources. |
-| 20 mins  | **Session 2**: Pipeline for training and testing visual RecSys in Python. |
-| 10 mins  | BREAK                                                        |
-| 25 mins  | **Session 3**: Visual Bayesian Personalized Ranking (VBPR) and Deep Visually-aware Bayesian Personalized Ranking (DVBPR) in Pytorch [2, 3] |
-| 20 mins  | **Session 4**: CuratorNet in Pytorch [1]                     |
-| 20 mins  | **Session 5**: Attentive Collaborative Filtering (ACF) in Pytorch [4] |
-| 15 mins  | Live demo of this repository                                 |
-| 10 mins  | Conclusions                                                  |
+| Duration | Overview                                                     | Presenter(s)                     |
+| -------- | ------------------------------------------------------------ | -------------------------------- |
+| 30 mins  | **Session 1**: Introduction to Visual RecSys, datasets and feature extraction with CNNS in Python. Wikimedia Foundation and its available research resources. | Denis Parra & Diego Saez-Trumper |
+| 20 mins  | **Session 2**: Pipeline for training and testing visual RecSys in Python. | Antonio Ossa-Guerra              |
+| 10 mins  | BREAK                                                        | -                                |
+| 25 mins  | **Session 3**: Visual Bayesian Personalized Ranking (VBPR) and Deep Visually-aware Bayesian Personalized Ranking (DVBPR) in Pytorch [2, 3] | Patricio Cerda-Mardini           |
+| 20 mins  | **Session 4**: CuratorNet in Pytorch [1]                     | Manuel Cartagena                 |
+| 20 mins  | **Session 5**: Attentive Collaborative Filtering (ACF) in Pytorch [4] | Felipe del Río                   |
+| 15 mins  | Live demo of this repository                                 | Isidora Palma                    |
+| 10 mins  | Conclusions                                                  | Denis Parra                      |
 
-Expected length of tutorial: 2.5 hours (half-day)
+**Expected length of tutorial**: 2.5 hours (half-day)
 
 ## Material
 
 * [Code @ ialab-puc/VisualRecSys-Tutorial-ICDM2021 (GitHub)](https://github.com/ialab-puc/VisualRecSys-Tutorial-ICDM2021)
 * Slides (TBA)
 * Recording (TBA)
-
-## Instructors
-
-* Denis Parra, Associate Professor, PUC Chile
-* Antonio Ossa-Guerra, MSc, PUC Chile
-* Manuel Cartagena, MSc, PUC Chile
-* Patricio Cerda-Mardini, MSc, PUC Chile & MindsDB
-* Felipe del Río, PhD Student, PUC Chile
-* Isidora Palma, MSc Student, PUC Chile
-* Diego Saez-Trumper, Senior Research Scientist, Wikimedia Foundation
-* Miriam Redi, Senior Research Scientist, Wikimedia Foundation
 
 ## Wikimedia Commons Dataset
 
@@ -56,14 +56,6 @@ We acknowledge the support of [Diego Saez-Trumper](https://wikimediafoundation.o
 | [2] VBPR       | .77846 | .02169 | .05565 | .00278 | .02684 | .13821 | .00138 | .04105  |
 | [3] DVBPR      | .83168 | .04507 | .12152 | .00607 | .05814 | .25695 | .00256 | .08245  |
 | [4] ACF        | .80409 | .01594 | .05473 | .00273 | .02127 | .14935 | .00149 | .03781  |
-
----
-
-## Citation
-
-TBA
-
-> In the meantime, you might be interested in our tutorial "VisRec: A Hands-on Tutorial on Deep Learning for Visual Recommender Systems". Which can be found in [https://github.com/ialab-puc/VisualRecSys-Tutorial-IUI2021](https://github.com/ialab-puc/VisualRecSys-Tutorial-IUI2021).
 
 ## References
 
