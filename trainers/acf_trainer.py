@@ -6,7 +6,7 @@ import torch
 from torch.utils.data import DataLoader
 from torch import tensor
 import numpy as np
-from tqdm.auto import tqdm
+from tqdm import tqdm
 
 from utils.logger import Log
 
@@ -73,9 +73,9 @@ class ACFTrainer():
         self.all_items = self.preprocess_inputs(self.train.items, to_tensor=True)
 
         self.train_loader = DataLoader(self.train, batch_size=batch_size, shuffle=True,
-                                       collate_fn=generate_collate_fn(max_profile_size), num_workers=8)
+                                       collate_fn=generate_collate_fn(max_profile_size))
         self.test_loader = DataLoader(self.test, batch_size=batch_size, shuffle=True,
-                                      collate_fn=generate_collate_fn(max_profile_size), num_workers=1)
+                                      collate_fn=generate_collate_fn(max_profile_size))
 
         if checkpoint_dir is None:
             checkpoint_dir = os.path.join("checkpoints")

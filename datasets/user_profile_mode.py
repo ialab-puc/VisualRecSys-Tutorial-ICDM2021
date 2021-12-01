@@ -34,7 +34,7 @@ class UserProfileModeDataset(Dataset):
         self.profile = self.create_profiles(triples["profile"], remove_items=self.pi, padded=items_padded)
 
         self.users = np.unique(self.ui)
-        self.items = np.unique(self.pi)
+        self.items = np.unique(np.concatenate((self.pi, self.ni)))
 
         # Common setup
         self.transform = transform
