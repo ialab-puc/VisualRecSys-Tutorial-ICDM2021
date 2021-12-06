@@ -25,7 +25,7 @@ Due to the advancements in deep learning, visual recommendation systems are impl
 
 | Duration | Overview                                                     | Presenter(s)                     |
 | -------- | ------------------------------------------------------------ | -------------------------------- |
-| 30 mins  | **Session 1**: Introduction to Visual RecSys, datasets and feature extraction with CNNS in Python. Wikimedia Foundation and its available research resources. | Denis Parra & Diego Saez-Trumper |
+| 30 mins  | **Session 1**: Introduction to Visual RecSys, datasets and feature extraction with CNNS in Python. Wikimedia Foundation and its available research resources. | Denis Parra & Diego Saez-Trumper & Miriam Redi |
 | 20 mins  | **Session 2**: Pipeline for training and testing visual RecSys in Python. | Antonio Ossa-Guerra              |
 | 10 mins  | BREAK                                                        | -                                |
 | 25 mins  | **Session 3**: Visual Bayesian Personalized Ranking (VBPR) and Deep Visually-aware Bayesian Personalized Ranking (DVBPR) in Pytorch [2, 3] | Patricio Cerda-Mardini           |
