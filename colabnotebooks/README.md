@@ -4,7 +4,7 @@ The most important actually is Colab Notebook 6 **Evaluation**, since you can lo
 
 |   ID  | Description                 | Link        |
 |-------|-----------------------------|-------------|
-|  [1]  | Visual feature extraction   | [colab1](https://colab.research.google.com/drive/1JCTPS88AzKA0KNVCoEvYCBaaYebgdoYn?usp=sharing) |
+|  [1]  | Visual feature extraction   | [colab1](https://colab.research.google.com/drive/1JCTPS88AzKA0KNVCoEvYCBaaYebgdoYn) |
 |  [2]  | VisRank train (TODO)                    | [colab2](#) |
 |  [3]  | VBPR  train (TODO)                  | [colab3](#) |
 |  [4]  | DVBPR  train (TODO)                      | [colab4](#) |
