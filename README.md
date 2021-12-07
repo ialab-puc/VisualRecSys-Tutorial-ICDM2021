@@ -2,7 +2,7 @@
 
 This page hosts the material for our work **A Tutorial on Wikimedia Visual Resources and its Application to Neural Visual Recommender Systems**, presented at the [21st IEEE International Conference on Data Mining (IEEE ICDM 2021)](https://icdm2021.auckland.ac.nz/).
 
-**Schedule**: 16:00-18:30, Wednesday, December 8, 2021 (GMT+13, Time in Auckland, New Zealand)
+**Schedule**: 16:00-18:30, Wednesday, December 8, 2021 (GMT+13, Time in Auckland, New Zealand) ([See more timezones](https://www.timeanddate.com/worldclock/converter.html?iso=20211208T030000&p1=tz_nzdt&p2=232&p3=31&p4=136))
 
 ## Instructors
 
