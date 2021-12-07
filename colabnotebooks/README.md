@@ -10,4 +10,4 @@ The most important actually is Colab Notebook 6 **Evaluation**, since you can lo
 |  [4]  | DVBPR  train (TODO)                      | [colab4](#) |
 |  [5]  | CuratorNet  train       | [colab5](https://colab.research.google.com/drive/1vGYUbQK8fxOxt_TAoOgok17n2g9VAr2s?usp=sharing) |
 |  [6]  | Evaluation                  | [colab6](https://colab.research.google.com/drive/1TCmXpcRHOlzleOrMsX_C3-7Xon4K-oRJ?usp=sharing) |
-|  [7]  | Attention Exploration (ACF) | [colab7](https://colab.research.google.com/drive/1eSI5ZFM1NNBhXO0sSZreXHJfEJU5vraE?usp=sharing) |
+|  [7]  | Attention Exploration (ACF) | [colab7](https://colab.research.google.com/drive/1SlekemU9mOYLpn7yb6EgMAi8UrZJFRy8#scrollTo=WQJj8UppoFQV) |
