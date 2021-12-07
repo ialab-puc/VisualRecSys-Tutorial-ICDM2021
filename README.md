@@ -4,7 +4,7 @@ This page hosts the material for our work **A Tutorial on Wikimedia Visual Resou
 
 **Abstract**: Due to the advancements in deep learning, visual recommendation systems are implemented using visual features from Deep Neural Networks (DNNs) as representations of images. The tutorial focuses on the implementation of visual recommendation systems using deep learning techniques, as well as model evaluation. For this purpose, we present some of the available research resources from the Wikimedia Foundation, introducing a new dataset for image recommendation. The tutorial aims at introducing visual recommendation systems to the data mining community, guiding participants through the complete pipeline of a visual recommendation problem, from data gathering to model evaluation and analysis.
 
-**Schedule**: TBA (Conference dates: December 7-10, 2021)
+**Schedule**: 16:00-18:30, Wednesday, December 8, 2021 (GMT+13, Time in Auckland, New Zealand) ([See more timezones](https://www.timeanddate.com/worldclock/converter.html?iso=20211208T030000&p1=tz_nzdt&p2=232&p3=31&p4=136))
 
 **Contact**: Antonio Ossa-Guerra (`aaossa[at]uc[dot]cl`)
 
@@ -57,10 +57,11 @@ We acknowledge the support of [Diego Saez-Trumper](https://wikimediafoundation.o
 
 |            | AUC     | RR      | R@20    | P@20    | nDCG@20 | R@100   | P@100   | nDCG@100 |
 |------------|---------|---------|---------|---------|---------|---------|---------|----------|
-| [1] CuratorNet | .66931 | .01955 | .03803 | .00190 | .02226 | .07884 | .00078 | .02943  |
-| [2] VBPR       | .77846 | .02169 | .05565 | .00278 | .02684 | .13821 | .00138 | .04105  |
-| [3] DVBPR      | .83168 | .04507 | .12152 | .00607 | .05814 | .25695 | .00256 | .08245  |
-| [4] ACF        | .80409 | .01594 | .05473 | .00273 | .02127 | .14935 | .00149 | .03781  |
+| VisRank        | .59216 | .01138 | .01881 | .00111 | .01274 | .03280 | .00039 | .01534 |
+| [1] CuratorNet | .61976 | .00931 | .01638 | .00100 | .01051 | .03582 | .00042 | .01403 |
+| [2] VBPR       | .73062 | .00964 | .01897 | .00113 | .01076 | .06017 | .00069 | .01872 |
+| [3] DVBPR      | .79573 | .07086 | .03163 | .01809 | .09253 | .10099 | .01155 | .12352 |
+| [4] ACF        | .77703 | .03547 | .01381 | .00802 | .04792 | .05142 | .00588 | .07886 |
 
 ## References
 
