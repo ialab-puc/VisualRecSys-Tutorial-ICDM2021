@@ -39,6 +39,7 @@ Due to the advancements in deep learning, visual recommendation systems are impl
 ## Material
 
 * [Code @ ialab-puc/VisualRecSys-Tutorial-ICDM2021 (GitHub)](https://github.com/ialab-puc/VisualRecSys-Tutorial-ICDM2021)
+* [Code from live demo (Google Colaboratory)](https://colab.research.google.com/drive/1i6rI2xu-D-UCumyL2i1cuYrpm-IbrNgo#offline=true&sandboxMode=true)
 * Slides (TBA)
 * Recording (TBA)
 
