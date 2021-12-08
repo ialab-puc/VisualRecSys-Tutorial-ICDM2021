@@ -45,7 +45,7 @@ Due to the advancements in deep learning, visual recommendation systems are impl
 
 ## Wikimedia Commons Dataset
 
-Just like you, we have been looking for several years for some datasets to train our models. For instance, the <a href="#">RecSys dataset collection by Prof. Julian McAuley at USCD </a> has datasets, but due to copyright issues he only shares embeddings as .npy and in some cases (such as the Amazon datasets) links to image URLS so you can doonload them on your own. We need images to test if our recommendations are making sense!
+Just like you, we have been looking for several years for some datasets to train our models. For instance, the <a href="#">RecSys dataset collection by Prof. Julian McAuley at USCD </a> has datasets, but due to copyright issues he only shares embeddings as .npy and in some cases (such as the Amazon datasets) links to image URLS so you can download them on your own. We need images to test if our recommendations are making sense!
 
 We acknowledge the support of [Diego Saez-Trumper](https://wikimediafoundation.org/profile/diego-saez-trumper/) from Wikimedia foundation to collect this dataset.
 
