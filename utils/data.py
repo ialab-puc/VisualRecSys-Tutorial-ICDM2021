@@ -55,3 +55,38 @@ def mark_evaluation_rows(interactions_df, threshold=None):
     # Reset index according to new order
     interactions_df = interactions_df.reset_index(drop=True)
     return interactions_df
+
+
+def get_holdout(interactions_df):
+    # Create evaluation dataframe
+    holdout = []
+    for user_id, group in interactions_df.groupby("user_id"):
+        # Check if there's a profile for training
+        profile_rows = group[~group["evaluation"]]
+        predict_rows = group[group["evaluation"]]
+        # Extract items
+        profile = profile_rows["item_id"].values.tolist()
+        if type(profile[0]) is list:
+            profile = [item for p in profile for item in p]
+        # Keep last interactions for evaluation
+        for _, p in predict_rows.iterrows():
+            timestamp = p["timestamp"]
+            predict = p["item_id"]
+            holdout.append([timestamp, profile, predict, user_id])
+            # profile.extend(predict)  # If profile grows in evaluation
+    # Store holdout in a pandas dataframe
+    holdout = pd.DataFrame(
+        holdout,
+        columns=["timestamp", "profile", "predict", "user_id"],
+    )
+    holdout = holdout.sort_values(by=["timestamp"])
+    holdout = holdout.reset_index(drop=True)
+
+    # Pick interactions not used for evaluation
+    new_dataset = interactions_df[~interactions_df["evaluation"]]
+    # Sort transactions by timestamp
+    new_dataset = new_dataset.sort_values("timestamp")
+    # Reset index according to new order
+    new_dataset = new_dataset.reset_index(drop=True)
+
+    return holdout, new_dataset
