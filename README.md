@@ -23,16 +23,16 @@ Due to the advancements in deep learning, visual recommendation systems are impl
 
 ## Program
 
-| Duration | Overview                                                     | Presenter(s)                     |
-| -------- | ------------------------------------------------------------ | -------------------------------- |
-| 30 mins  | **Session 1**: Introduction to Visual RecSys, datasets and feature extraction with CNNS in Python. Wikimedia Foundation and its available research resources. | Denis Parra & Diego Saez-Trumper & Miriam Redi |
-| 20 mins  | **Session 2**: Pipeline for training and testing visual RecSys in Python. | Antonio Ossa-Guerra              |
-| 10 mins  | BREAK                                                        | -                                |
-| 25 mins  | **Session 3**: Visual Bayesian Personalized Ranking (VBPR) and Deep Visually-aware Bayesian Personalized Ranking (DVBPR) in Pytorch [2, 3] | Patricio Cerda-Mardini           |
-| 20 mins  | **Session 4**: CuratorNet in Pytorch [1]                     | Manuel Cartagena                 |
-| 20 mins  | **Session 5**: Attentive Collaborative Filtering (ACF) in Pytorch [4] | Felipe del Río                   |
-| 15 mins  | Live demo of this repository                                 | Isidora Palma                    |
-| 10 mins  | Conclusions                                                  | Denis Parra                      |
+| Duration | Overview                                                     | Presenter(s)                     | Material                     |
+| -------- | ------------------------------------------------------------ | -------------------------------- | ---------------------------- |
+| 30 mins  | **Session 1**: Introduction to Visual RecSys, datasets and feature extraction with CNNS in Python. Wikimedia Foundation and its available research resources. | Denis Parra & Diego Saez-Trumper & Miriam Redi | [Video A](https://drive.google.com/file/d/1VncYYVC2vdLfY21up3YpLmT6vlwTJKmG/view?usp=sharing), [Video B](https://drive.google.com/file/d/1X76YfLSDXHRamBnhce896x1CHyZCS89r/view?usp=sharing) & [Slides A](https://github.com/ialab-puc/VisualRecSys-Tutorial-ICDM2021/blob/main/slides/Session%201%20A%20-%20Introduction%20to%20ICDM%20VisRec.pdf), [Slides B](https://github.com/ialab-puc/VisualRecSys-Tutorial-ICDM2021/blob/main/slides/Session%201%20B%20-%20Wikimedia%20Foundation.pdf) |
+| 20 mins  | **Session 2**: Pipeline for training and testing visual RecSys in Python. | Antonio Ossa-Guerra              | [Video](https://drive.google.com/file/d/1lJxYJ59a_HP9CorL5CUdWDa6gvpIrtGo/view?usp=sharing) & [Slides](https://github.com/ialab-puc/VisualRecSys-Tutorial-ICDM2021/blob/main/slides/Session%202%20-%20Pipeline%20%2B%20VisRank.pdf)      |
+| 10 mins  | BREAK                                                        | -                                | -                            |
+| 25 mins  | **Session 3**: Visual Bayesian Personalized Ranking (VBPR) and Deep Visually-aware Bayesian Personalized Ranking (DVBPR) in Pytorch [2, 3] | Patricio Cerda-Mardini           | [Video](https://drive.google.com/file/d/1PYyyav3YeHqoxd_HsXp6g2jv65psB78z/view?usp=sharing) & [Slides](https://github.com/ialab-puc/VisualRecSys-Tutorial-ICDM2021/blob/main/slides/Session%203%20-%20VBPR%20%2B%20DVBPR.pdf)      |
+| 20 mins  | **Session 4**: CuratorNet in Pytorch [1]                     | Manuel Cartagena                 | [Video](https://drive.google.com/file/d/1u8mMpQBtBeUV6cbUy8gMS5wHm3GFKpSq/view?usp=sharing) & [Slides](https://github.com/ialab-puc/VisualRecSys-Tutorial-ICDM2021/blob/main/slides/Session%204%20-%20CuratorNet.pdf)      |
+| 20 mins  | **Session 5**: Attentive Collaborative Filtering (ACF) in Pytorch [4] | Felipe del Río                   | [Video](https://drive.google.com/file/d/1wUp6Ii4pGAkZ8uDQrEIoL4oGijgAgrKS/view?usp=sharing) & [Slides](https://github.com/ialab-puc/VisualRecSys-Tutorial-ICDM2021/blob/main/slides/Session%205%20-%20ACF.pdf)      |
+| 15 mins  | Live demo of this repository                                 | Isidora Palma                    | [Video](https://drive.google.com/file/d/1_mremjdOlP3ATnnSX2vVjDnlq8S_an0C/view?usp=sharing)                   |
+| 10 mins  | Conclusions                                                  | Denis Parra                      |                              |
 
 **Expected length of tutorial**: 2.5 hours (half-day)
 
@@ -40,8 +40,8 @@ Due to the advancements in deep learning, visual recommendation systems are impl
 
 * [Code @ ialab-puc/VisualRecSys-Tutorial-ICDM2021 (GitHub)](https://github.com/ialab-puc/VisualRecSys-Tutorial-ICDM2021)
 * [Code from live demo (Google Colaboratory)](https://colab.research.google.com/drive/1i6rI2xu-D-UCumyL2i1cuYrpm-IbrNgo#offline=true&sandboxMode=true)
-* Slides (TBA)
-* Recording (TBA)
+* [Slides @ ialab-puc/VisualRecSys-Tutorial-ICDM2021 (GitHub)](https://github.com/ialab-puc/VisualRecSys-Tutorial-ICDM2021/tree/main/slides)
+* Event recording (TBA)
 
 ## Wikimedia Commons Dataset
 
