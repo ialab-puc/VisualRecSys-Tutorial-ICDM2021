@@ -1,4 +1,6 @@
+from pathlib import Path
 import numpy as np
+import h5py
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -173,7 +175,8 @@ class ACF(nn.Module):
                  model_dim=128,
                  input_feature_dim=0,
                  tied_item_embedding=True,
-                 device=None):
+                 device=None,
+                 force_h5=False):
 
         super().__init__()
         self.pad_token = 0
@@ -188,10 +191,11 @@ class ACF(nn.Module):
 
         self.all_items = torch.tensor(items)
         self.all_items = self.all_items + 1 if self.all_items.min() == 0 else self.all_items
-        self.feature_data = self.load_feature_data(feature_path)
+        self.using_h5 = force_h5
+        input_feature_shape, self.feature_data = self.load_feature_data(feature_path, force_h5=force_h5)
+        input_feature_dim = input_feature_shape[-1]
         num_items = max(self.all_items) + 1
 
-        input_feature_dim = self.feature_data.shape[-1]
         self.item_model = nn.Embedding(num_items, self.model_dim, padding_idx=self.pad_token)
         self.user_model = (
             ACFUserNet(
@@ -248,7 +252,29 @@ class ACF(nn.Module):
 
         return scores
 
-    def load_feature_data(self, feature_path):
+    def load_feature_data(self, feature_path, force_h5=False):
+        if force_h5:
+            feature_path = str(Path(feature_path).with_suffix('.h5'))
+            self.feature_path = feature_path
+            with h5py.File(feature_path) as fp:
+                feature_data_shape = fp['resnet50/layer4'].shape
+                feature_data_shape = tuple(feature_data_shape[d] for d in (0,2,3,1))
+            return feature_data_shape, None
+        else:
+            feature_data = self.load_feature_numpy(feature_path)
+            return feature_data.shape, feature_data
+
+    # def load_feature_h5(self, feature_path):
+    #     with open(feature_path, 'rb') as fp:
+    #         feature_data = np.load(fp, allow_pickle=True)
+    #     feature_data = feature_data[:,1].tolist()
+    #     feature_data = np.array(feature_data) # Faster when transformed to numpy first
+    #     feature_data = torch.tensor(feature_data)
+    #     feature_data = feature_data.permute((0,2,3,1)) # TODO: Hack: by default d should be last dimension
+    #     feature_data = self.append_default_features(feature_data)
+    #     return feature_data
+
+    def load_feature_numpy(self, feature_path):
         with open(feature_path, 'rb') as fp:
             feature_data = np.load(fp, allow_pickle=True)
         feature_data = feature_data[:,1].tolist()
@@ -265,12 +291,31 @@ class ACF(nn.Module):
         return feature_data
 
     def get_features(self, ids):
+        if self.using_h5:
+            return self.get_features_h5(ids)
+        else:
+            return self.get_features_numpy(ids)
+
+    def get_features_numpy(self, ids):
         if isinstance(ids, int):
                 ids = torch.tensor([ids])
         if isinstance(ids, list):
                 ids = torch.tensor(ids)
 
         return self.feature_data[ids]
+
+    def get_features_h5(self, ids):
+        features = []
+        with h5py.File(self.feature_path) as file:
+            feature_data = file['resnet50/layer4']
+            feature_dims = feature_data.shape[1:]
+            default_features = np.zeros((1, *feature_dims))
+            bids = ids.tolist()
+            features = np.array(
+                [[feature_data[id - 1].transpose((1,2,0)) if id !=0 else default_features
+                for id in ids]
+                for ids in bids])
+        return torch.tensor(features, device=self.device)
 
     def args(self):
         return {
@@ -282,7 +327,7 @@ class ACF(nn.Module):
         }
 
     @classmethod
-    def from_checkpoint(cls, checkpoint, device=None):
+    def from_checkpoint(cls, checkpoint, device=None, force_h5=False):
         args = checkpoint['model_args']
         model = cls(
             users=args['users'],
@@ -291,6 +336,7 @@ class ACF(nn.Module):
             model_dim=args['model_dim'],
             input_feature_dim=args['input_feature_dim'],
             device=device,
+            force_h5=force_h5,
         )
         model.load_state_dict(checkpoint['state_dict'])
         if device:
